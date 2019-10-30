@@ -1,0 +1,461 @@
+/*id per il fade in dell'header nella home*/
+#move{
+    display: none;
+}
+
+
+.black {
+    color: #fff;
+    font-size: 1.4em;
+
+}
+
+/*------style per il riquadro social------*/
+.box{
+    position: relative;
+    text-align: center;
+    color: #000;
+    overflow: hidden;
+}
+.box-img{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.5s ease-in-out 0s;
+}
+.box-img img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 0 20px;
+    transform: translate3d(0px, 100%, 0px);
+    transition: all 0.5s ease-in-out 0s;
+}
+.title{
+    margin-top: 50px;
+    text-transform: capitalize;
+}
+.description{
+    font-size: 15px;
+}
+.title:after,
+.description:after{
+    content: "";
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.social{
+    padding: 0;
+    list-style: none;
+    margin-top: 13px;
+}
+.social > li{
+    display: inline-block;
+}
+.social > li > a{
+    color: #956956;
+    font-size: 18px;
+    padding: 0 4px;
+}
+.social > li > a:hover{
+    color:#000;
+}
+.box:hover .box-img{
+    transform: translate3d(0px, -100%, 0px);
+}
+.box:hover .content{
+    transform: translate3d(0px, 0px, 0px);
+}
+@media only screen and (max-width: 990px){
+    .box{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------layout per hero image index page*/
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+   
+}
+
+.well{
+	background-color: #212121;
+	border: 1px solid #956956;
+}
+
+h3, h4, hr {
+	color: #8A6251;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../immagini/head.jpg) no-repeat center;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-body p {
+	border: 2px solid #fff;
+    padding: 10px;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+
+}
+
+.intro .intro-body .intro-text {
+    font-size: 26px;
+
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 100px;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+
+/* sezione prova pagina home con foto grande*/
+
+/**/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover{
+    color: #966A57;
+}
+
+
+.go {
+	border-right: 1px solid #D8CDCD;
+}
+
+
+
+.list li {
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+
+
+* {
+	font-family: 'Abel', sans-serif;
+}
+
+
+
+.navbar-inverse .navbar-brand {
+    color: #966A57;
+}
+
+
+.navbar-brand {
+	font-size: 18px;
+	
+	
+}
+
+.navbar-inverse .navbar-nav li a {
+	font-size: 16px;
+	color: #966A57;
+	
+}  
+
+ .active {
+ 	text-decoration: underline;
+ }
+
+
+ .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+ 	    border-color: white;
+ 	}
+
+.dropdown-menu {
+	background-color: #222;
+}
+
+.dropdown-menu>li>a {
+	color: #966A57;
+}
+
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+
+	color: #fff;
+	background-color: #222;
+
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #966A57;
+}
+
+
+
+header img {
+	width: 100%;
+		
+}
+
+/*---------caption testo index su foto---------------*/
+
+ .Vuoto  {
+	
+	color: #966A57;
+	background-color: rgba(255, 255, 255, 0.3);
+	font-size: 60px;
+	
+}
+
+.carousel-caption {
+	right: 0%;
+	left: 0%;
+	bottom: 400px;
+}
+/*---------fine caption testo index su foto---------------*/
+
+
+.testo {
+	position: absolute;
+	width: 100%;
+	margin-top: 120px;
+	z-index: 1;
+	color: #966A57;
+}
+
+/* main content*/
+.main-content {
+	padding: 30px 50px;
+}
+
+.main-content h3 {
+	
+	font-size: 2.6em;
+	color: #966A57;
+	border: 3px solid #966A57;
+	display: inline-block;
+	padding: 10px 30px;
+	margin-bottom: 40px;
+ }
+
+ .main-content h4 {
+ 	color: #3f3f3f;
+ 	font-size: 1.8em;
+ 	font-family: 'Oswald', sans-serif;
+
+ }
+
+ .main-content h4 small {
+ 	color: #a0a0a0;
+ 	font-size: .8em;
+ 	border-left: 1px solid #a0a0a0;
+ 	padding-left: 10px;
+ 	margin-left: 10px;
+ 	border-color: #a0a0a0;
+ }
+
+ .main-content .about-me p {
+ 	font-size: 1.3em;
+ 	color: #8A6251;
+ 	
+ }
+
+
+
+
+
+/*--------contact---------------*/
+
+.jumbotron p {
+	font-size: 19px;
+}
+ .contact .row {
+ 	padding-top: 40px;
+ }
+
+ input {
+ 	height: 50px;
+ 	width: 100%;
+ 	border: 2px solid #966A57;
+ 	color: #966A57;
+ 	margin-bottom: 20px;
+ 	
+ 	padding: 0 20px;
+ 	font-size: 1.3em;
+ }
+
+ input:focus {
+ 	border: 3px solid #966A57;
+ 	box-shadow: 0 0 5px 1px #966A57;
+ }
+ .send {
+ 	width: 160px;
+ 	background-color: #fff;
+ }
+
+ .send:hover {
+ 	border-color: #966A57;
+ 	color: #966A57;
+ }
+
+ .message {
+ 	height: 200px;
+ 	padding-bottom: 150px;
+ }
+
+
+ .quick-info i {
+ 	position: absolute;
+ 	left: 0;
+ 	font-size: 1.4em;
+ 	color: #b9b9b9;
+ }
+
+ .quick-info p {
+ 	padding-left: 15px;
+ 	
+ 	color: #a5a5a5 !important;
+ }
+
+.quick-info-social i {
+ 	position: absolute;
+ 	left: 10px;
+ 	font-size: 2em;
+ 	color: #b9b9b9;
+ }
+
+
+/*--------------------fine contact--------------*/
+
+footer {
+	color: #8A6251;
+	padding: 20px;
+	border: 1px solid #8A6251;
+}
+@media (max-width: 768px) {
+	.navbar-inverse .navbar-nav li a {
+		width: 100%;
+		border-bottom: 1px solid #2F2720;
+		text-align: center;
+	}
+
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+
+background-color: rgba(56, 43, 43, 0.91);
+color: #966A57;
+	
+}
+
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #966A57;
+    background-color: #222;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #fff;
+    background-color: #222;
+}
+
+
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    border-color: #2B2323;
+}
+
+
+
+
+
+
+	 .Vuoto  {
+	
+	color: #966A57;
+	background-color: rgba(255, 255, 255, 0.65);
+	font-size: 24px;
+}
+
+.carousel-caption {
+	right: 0%;
+	left: 0%;
+	bottom: 90px;
+}
+
+
+
+
+	}
+
+
+
+
